@@ -24,11 +24,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @version 9.1.200310
  * @since 9.1.200220
  */
-if ( ! function_exists( 'version_8_load_material_icon_components' ) ) :
-function version_8_load_material_icon_components() {
+if ( ! function_exists( 'vi_load_material_icon_components' ) ) :
+function vi_load_material_icon_components() {
 
-    wp_enqueue_style( 'version_8-material_icon_style', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '3.0.1', 'all' );
+    wp_enqueue_style( 'vi-material_icon_style', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0', array(), '3.0.1', 'all' );
+
 }
 //prioritize above default so that it is more likely to be overridden naturally in the theme
-add_action( 'wp_enqueue_scripts', 'version_8_load_material_icon_components', 5 );
+add_action( 'wp_enqueue_scripts', 'vi_load_material_icon_components', 5 );
 endif;
